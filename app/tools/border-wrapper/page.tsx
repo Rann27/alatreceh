@@ -226,6 +226,7 @@ export default function BorderWrapperPage() {
   useEffect(() => {
     const result = buildBox(inputText);
     setOutput(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputText, maxWidth, padTop, padRight, padBottom, padLeft, borderStyle, wrapMode, spaceChar, boxMode, trimLines, collapseBlank, ambigWide]);
 
   const handleCopy = async () => {
